@@ -1,0 +1,6 @@
+<%- include('partials/header'); -%>
+<% elements.forEach(function(element) {%>
+    <h2><%= element.title %></h2>
+    <p> <%= element.content %> </p>
+<% }) %>
+<%- include('partials/footer'); -%>
