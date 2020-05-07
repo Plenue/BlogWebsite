@@ -2,5 +2,10 @@
 <% elements.forEach(function(element) {%>
     <h2><%= element.title %></h2>
     <p> <%= element.content %> </p>
+    <form action="/delete" method="POST">
+        <button class='btn btn-secondary' type="submit" name = "delete" value ="<%=element._id%>">Delete</button>
+    </form>
 <% }) %>
+
+
 <%- include('partials/footer'); -%>
